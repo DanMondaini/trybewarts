@@ -1,48 +1,36 @@
-.header{
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
 }
 
-.header h1{
-    text-align: center;
+.header h1 {
+  text-align: center;
 }
 
-.header img{
-    width: 100px;;
+.header img {
+  width: 100px;
 }
 
-.trybewarts-login{
-    display: flex;
+.trybewarts-login {
+  display: flex;
 }
 
 #main {
-    display: flex;
+  display: flex;
 }
-    
+
 #evaluation-form {
-    display: flex;
-    width: 675px;
-    flex-direction: column;
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
 
 #name-container {
-    display: flex;
+  display: flex;
 }
 
 #email-container {
-    display: flex;
-}
-
-#input-name {
-    
-}
-
-#input-lastname {
-    
-}
-
-#input-email {
-
+  display: flex;
 }

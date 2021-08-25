@@ -1,4 +1,4 @@
-/* Adiciona Botão e validação de Login*/
+/* Adiciona Botão e validação de Login */
 let buttonLogin = document.querySelector('#button-login');
 let inputEmail = document.querySelector('#input-email');
 let inputPassword = document.querySelector('#input-password');
