@@ -7,10 +7,10 @@ let validationPassword = '123456';
 
 buttonLogin.addEventListener('click', validationButton);
 function validationButton(){
-    if(inputEmail.value === validationLogin || inputPassword.value === validationPassword){
-        alert = ('Olá, Tryber!');
+    if(inputEmail.value === validationLogin && inputPassword.value === validationPassword){
+        alert('Olá, Tryber!');
     }
     else{
-        alert = ('Email ou senha inválidos.');
+        alert('Email ou senha inválidos.');
     }
 }
