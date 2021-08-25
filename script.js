@@ -11,7 +11,6 @@ function validationButton() {
   } else {
     alert('Email ou senha inválidos.');
   }
-
-  buttonLogin.addEventListener('click', validationButton);
-  validationButton();
+  
 }
+buttonLogin.addEventListener('click', validationButton);
