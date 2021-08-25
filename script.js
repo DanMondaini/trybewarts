@@ -10,7 +10,6 @@ function validationButton() {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
-  }
-  
+  }  
 }
 buttonLogin.addEventListener('click', validationButton);
