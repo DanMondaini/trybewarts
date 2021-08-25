@@ -5,12 +5,12 @@ const inputPassword = document.querySelector('#input-password');
 const validationLogin = 'tryber@teste.com';
 const validationPassword = '123456';
 
-buttonLogin.addEventListener('click', validationButton);
 function validationButton() {
-    if(inputEmail.value === validationLogin && inputPassword.value === validationPassword){
-      alert('Olá, Tryber!');
-    }
-    else {
+  if(inputEmail.value === validationLogin && inputPassword.value === validationPassword) {
+    alert('Olá, Tryber!');
+  } else {
       alert('Email ou senha inválidos.');
-    }
+  }
+
+  buttonLogin.addEventListener('click', validationButton);
 }
