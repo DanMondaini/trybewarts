@@ -26,3 +26,23 @@
     width: 675px;
     flex-direction: column;
 }
+
+#name-container {
+    display: flex;
+}
+
+#email-container {
+    display: flex;
+}
+
+#input-name {
+    
+}
+
+#input-lastname {
+    
+}
+
+#input-email {
+
+}
