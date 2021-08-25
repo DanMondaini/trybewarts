@@ -7,7 +7,7 @@ const validationPassword = '123456';
 
 buttonLogin.addEventListener('click', validationButton);
 function validationButton() {
-    if (inputEmail.value===validationLogin && inputPassword.value===validationPassword){
+    if(inputEmail.value === validationLogin && inputPassword.value === validationPassword){
       alert('Olá, Tryber!');
     }
     else {
