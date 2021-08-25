@@ -70,22 +70,23 @@
                 <label for="" class="textarea">Deixe seu comentário:</label>
                 <textarea name="" id="textarea" maxlength="500"></textarea>
             </div>
+            <div>
+                <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" name="" onchange="document.getElementById('submit-btn').disabled = !this.checked;" id="agreement"> 
+            </div>
+            <!--Consultei o link: https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked/18110998 para resolução do requisito 18-->
+       
+            <div>
+                <input type="submit" value="Enviar" id="submit-btn">
+            </div>
         </form>        
         <div id="container-logo">
             <img src="images/trybewarts-colored.svg" alt="trybe-warts-logo-principal" id="trybewarts-forms-logo">
-        </div>  
-        
-        <div>
-            <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-            <input type="checkbox" name="" onchange="document.getElementById('submit-btn').disabled = !this.checked;" id="agreement"> 
         </div>
-        <!--Consultei o link: https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked/18110998 para resolução do requisito 18-->
-   
-        <div>
-            <input type="submit" value="Enviar" id="submit-btn">
-        </div>
-    
-    </main>
+        </main>
+    <footer>
+        Direitos reservados à Trybewarts©
+    </footer>
     
     
     
