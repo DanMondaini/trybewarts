@@ -9,9 +9,9 @@ function validationButton() {
   if (inputEmail.value === validationLogin && inputPassword.value === validationPassword) {
     alert('Olá, Tryber!');
   } else {
-  alert('Email ou senha inválidos.');
+    alert('Email ou senha inválidos.');
   }
 
   buttonLogin.addEventListener('click', validationButton);
-  validationButton()
+  validationButton();
 }
