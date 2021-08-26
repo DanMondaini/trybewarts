@@ -22,9 +22,9 @@ function counterCharacter() {
 }
 textArea.addEventListener('keyup', counterCharacter);
 
-document.getElementById("submit-btn").disabled = true;
+document.getElementById('submit-btn').disabled = true;
 
-//consultamos o repositório do Arturo Vaine para o requisito 18 - link: https://github.com/tryber/sd-014-b-project-trybewarts/pull/42/commits/cef3445c02af40a04aaed8277aa1034de02b04e7
+//consultamos o repositório do Arturo Vaine para o requisito 18 - link: https://github.com/tryber/sd-014-b-project-trybewarts/pull/42/commits/cef3445c02af40a04aaed8277aa1034de02b04e7  
 
 const submitButton = document.getElementById('submit-btn');
 const checkboxAgreement = document.getElementById('agreement');
