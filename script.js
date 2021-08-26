@@ -73,6 +73,8 @@ function checkRate() {
   }
 }
 
+// Consultamos o repositório do Arturo Vaine para resolver o requisito 21 - link: https://github.com/tryber/sd-014-b-project-trybewarts/pull/42/commits/b6c4260b301962630f1816c3b21c919ebfae1b9f
+
 function submitForm() {
   form.innerHTML = '';
   form.innerHTML += `<p>Nome: ${name.value} ${lastName.value}</p>`;
