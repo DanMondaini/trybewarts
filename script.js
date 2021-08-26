@@ -40,7 +40,7 @@ checkboxAgreement.addEventListener('click', checkedButton);
 const inputname = document.querySelector('#input-name');
 const inputLastName = document.querySelectorAll('#input-lastname');
 const nameHere = document.querySelectorAll('#name-here');
-function addFormsAll(){
+function addFormsAll() {
   nameHere.innerHTML.add = inputname.value + inputLastName.value;
 }
 submitButton.addEventListener('click', addFormsAll);
