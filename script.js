@@ -1,6 +1,6 @@
 /* Adiciona Botão e validação de Login */
 const buttonLogin = document.querySelector('#button-login');
-const inputEmail = document.querySelector('#input-email');
+const inputEmail = document.querySelector('#input-email1');
 const inputPassword = document.querySelector('#input-password');
 const validationLogin = 'tryber@teste.com';
 const validationPassword = '123456';
