@@ -18,6 +18,6 @@ buttonLogin.addEventListener('click', validationButton);
 
 function counterCharacter() {
   const counterText = 500 - textArea.value.length;
-  counter.innerHTML = counterText; 
+  counter.innerHTML = counterText;
 }
 textArea.addEventListener('keyup', counterCharacter);
