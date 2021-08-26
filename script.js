@@ -37,10 +37,50 @@ function checkedButton() {
 }
 checkboxAgreement.addEventListener('click', checkedButton);
 
-const inputname = document.querySelector('#input-name');
-const inputLastName = document.querySelectorAll('#input-lastname');
-const nameHere = document.querySelectorAll('#name-here');
-function addFormsAll() {
-  nameHere.innerHTML.add = inputname.value + inputLastName.value;
+const form = document.querySelector('#evaluation-form');
+const name = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const email = document.querySelector('#input-email');
+const house = document.querySelector('#house');
+const family = document.querySelectorAll('#family');
+const subjects = document.querySelectorAll('.subject');
+const rating = document.querySelectorAll('#rate');
+const comment = document.querySelector('#textarea');
+
+function checkFamily() {
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked) {
+      return family[index].value;
+    }
+  }
 }
-submitButton.addEventListener('click', addFormsAll);
+
+function checkSubject() {
+  let subjectList = '';
+  for (let index = 0; index < subjects.length; index += 1) {
+    if (subjects[index].checked) {
+      subjectList += `${subjects[index].value}, `;
+    }
+  }
+  return subjectList;
+}
+
+function checkRate() {
+  for (let index = 0; index < rating.length; index += 1) {
+    if (rating[index].checked) {
+      return rating[index].value;
+    }
+  }
+}
+
+function submitForm() {
+  form.innerHTML = '';
+  form.innerHTML += `<p>Nome: ${name.value} ${lastName.value}</p>`;
+  form.innerHTML += `<p>Email: ${email.value}</p>`;
+  form.innerHTML += `<p>Casa: ${house.value}</p>`;
+  form.innerHTML += `<p>Família: ${checkFamily()}</p>`;
+  form.innerHTML += `<p>Matérias: ${checkSubject()}</p>`;
+  form.innerHTML += `<p>Avaliação: ${checkRate()}</p>`;
+  form.innerHTML += `<p>Observações: ${comment.value}</p>`;
+}
+submitButton.addEventListener('click', submitForm);
