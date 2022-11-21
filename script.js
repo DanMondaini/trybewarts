@@ -86,3 +86,5 @@ function submitForm() {
   form.innerHTML += `<p>Observações: ${comment.value}</p>`;
 }
 submitButton.addEventListener('click', submitForm);
+
+// Daniel Mondaini e Gustavo Faria
